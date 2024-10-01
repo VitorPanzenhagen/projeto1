@@ -1,0 +1,81 @@
+:root {
+    --primary-color: #3498db; /* Azul */
+    --secondary-color: #2ecc71; /* Verde */
+    --background-color: #f4f4f4; /* Cinza claro */
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2, h3 {
+    color: var(--primary-color);
+  }
+  
+  a {
+    color: var(--secondary-color);
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    z-index: 1000;
+    box-shadow: 0 4px 2px -2px gray;
+  }
+  
+  body {
+    margin-top: 60px; /* Compensar a altura do header fixo */
+  }
+
+  nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 5px;
+  }
+
+  form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+  }
+  
+  button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: darken(var(--secondary-color), 10%);
+  }
